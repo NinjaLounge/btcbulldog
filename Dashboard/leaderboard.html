@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="zxx">
+    
+<!-- Mirrored from uigaint.com/demo/html/Gamfi/leaderboard.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 27 Feb 2022 07:59:42 GMT -->
+
+<!-- Mirrored from www.lapad.co/leaderboard.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 15 Oct 2022 05:14:20 GMT -->
+<head>
+        <!-- meta tag -->
+        <meta charset="utf-8" />
+        <title>BTCBULLDOG</title>
+        <meta name="description" content="" />
+        <!-- responsive tag -->
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!-- favicon -->
+        <link rel="apple-touch-icon" href="apple-touch-icon.html" />
+        <link rel="shortcut icon" type="image/x-icon" href="assets/images/logo1.png" />
+        <script src="./node_modules/web3/dist/web3.min.js"></script>
+        <!-- Bootstrap v4.4.1 css -->
+        <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" />
+        <!-- animate css -->
+        <link rel="stylesheet" type="text/css" href="assets/css/animate.css" />
+        <!-- magnific css -->
+        <link rel="stylesheet" type="text/css" href="assets/css/magnific-popup.css" />
+        <!-- owl.carousel css -->
+        <link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.css" />
+        <!-- off canvas css -->
+        <link rel="stylesheet" type="text/css" href="assets/css/off-canvas.css" />
+        <!-- flaticon css  -->
+        <link rel="stylesheet" type="text/css" href="assets/css/ico-moon-fonts.css" />
+        <!-- spacing css -->
+        <link rel="stylesheet" type="text/css" href="assets/css/sc-spacing.css" />
+        <!-- style css -->
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+        <!-- responsive css -->
+        <link rel="stylesheet" type="text/css" href="assets/css/responsive.css" />
+    </head>
+    <body class="defult-home">
+
+        <!--Preloader area start here-->
+        <section class="loader_first">
+            <div class="circular-spinner"></div>
+        </section>
+        <!--Preloader area End here-->
+
+        <!--Header Start-->
+        <header id="gamfi-header" class="gamfi-header-section default-header">
+            <div class="menu-area menu-sticky">
+                <div class="container">
+                    <div class="heaader-inner-area d-flex justify-content-between align-items-center">
+                        <div class="gamfi-logo-area d-flex justify-content-between align-items-center">
+                            <div class="logo">
+                                <a href="index.html"><img style="width: 100px; height: 100px;" src="/assets/images/logo1.png" alt="logo" /></a>
+                            </div>
+                            <div class="header-menu">
+                                <ul class="nav-menu">
+                                    <!-- <li><a href="index.html">Home</a></li>
+                                    <li><a href="project.html">Projects</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="project.html">Projects List</a></li>
+                                            <li><a href="explore.html">Projects Grid</a></li>
+                                            <li><a href="calendar.html">Project Calendar</a></li>
+                                            <li><a href="project-details.html">Project Details</a></li>
+                                        </ul>
+                                    </li> -->
+                                    <li><a href="index.html">Staking</a>
+                                        <!-- <ul class="sub-menu">
+                                            <li><a href="index.html">Staking 1</a></li>
+                                            <li><a href="staking-2.html">Staking 2</a></li>
+                                        </ul> -->
+                                    </li>
+                                    <li><a href="INC.html">BAG</a>
+                                        <!-- <ul class="sub-menu">
+                                            <li class="menu-item-has-children"><a href="kyc_process.html">KYC Process</a>
+                                                <ul class="sub-menu">
+                                                    <li><a href="kyc_process.html">KYC Step 1</a></li>
+                                                    <li><a href="kyc_process-Step2.html">KYC Step 2</a></li>
+                                                    <li><a href="kyc_process-Step3.html">KYC Step 3</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="menu-item-has-children"><a href="signin.html">Auth Pages</a>
+                                                <ul class="sub-menu">
+                                                    <li><a href="signUp.html">Sign Up</a></li>
+                                                    <li><a href="signin.html">Sign In</a></li>
+                                                    <li><a href="Forget-Password.html">Forgot Password</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="farm.html">Farming</a></li>
+                                            <li><a href="leaderboard.html">Leaderboard</a></li>
+                                            <li><a href="igo-ranking.html">IGO Ranking</a></li>
+                                            <li><a href="roadMap.html">INC</a></li>
+                                            <li><a href="teamdetails.html">Team Details</a></li>
+                                            <li><a href="Get-In-touch.html">Contact Us</a></li>
+                                            <li><a href="igo-apply.html">Apply For IGO</a></li>
+                                        </ul> -->
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="gamfi-btn-area">
+                            <ul>
+                                <li>
+                                    <a id="nav-expander" class="nav-expander bar" href="#">
+                                        <div class="bar">
+                                            <span class="dot1"></span>
+                                            <span class="dot2"></span>
+                                            <span class="dot3"></span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="buy-token">
+                                    <a class="readon black-shape" href="#">
+                                        <span class="btn-text">Buy BAG </span>
+                                        <i class="icon-arrow_down"></i>
+                                        <span class="hover-shape1"></span>
+                                        <span class="hover-shape2"></span>
+                                        <span class="hover-shape3"></span>
+                                    </a>
+                                    <ul>
+                                        <li><a href="#"><img src="assets/images/icons/pancake.png" alt="pancake"> PancakeSwap</a></li>
+                                      
+                                    </ul>
+                                </li>
+                                <li>
+                                    <button onclick="connect()" type="button" class="readon white-btn hover-shape"  data-bs-target="#exampleModal"><img src="assets/images/icons/connect.png" alt="Icon"> 
+                                        <span id="wal" class="btn-text">Connect </span>
+                                        <span class="hover-shape1"></span>
+                                        <span class="hover-shape2"></span>
+                                        <span class="hover-shape3"></span>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Canvas Mobile Menu start -->
+            <nav class="right_menu_togle mobile-navbar-menu" id="mobile-navbar-menu">
+                <div class="close-btn">
+                    <a id="nav-close2" class="nav-close">
+                        <div class="line">
+                            <span class="line1"></span>
+                            <span class="line2"></span>
+                        </div>
+                    </a>
+                </div>
+                <div class="sidebar-logo mb-30">
+                    <a href="index.html"><img src="assets/images/logo-dark1.png" alt=""></a>
+                </div>
+                <ul class="nav-menu">
+                    <li class="current-menu-item"><a href="index.html">Home</a></li>
+                 
+                    <li><a href="index.html">Staking</a>
+                        <!-- <ul class="sub-menu"> -->
+                            <!-- <li><a href="project.html">Projects List</a></li>
+                            <li><a href="explore.html">Projects Grid</a></li>
+                            <li><a href="calendar.html">Project Calendar</a></li>
+                            <li><a href="project-details.html">Project Details</a></li> -->
+                        <!-- </ul> -->
+                    </li>
+                    <li><a href="INC.html">BAG</a>
+                       
+                    </li>
+                    <li class="menu-item-has-children">
+                        
+                    </li>
+                    <li class="menu-item-has-children">
+                        <a href="#">Buy Token</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">PancakeSwap</a></li>
+                            
+                        </ul>
+                    </li>
+                    <li>
+                        <button type="button" class="readon black-shape-big connectWalletBtnforMobile" data-bs-toggle="modal" data-bs-target="#exampleModal"><img src="assets/images/icons/connect_white.png" alt="Icon">
+                            <span class="btn-text">Connect </span>
+                            <span class="hover-shape1"></span>
+                            <span class="hover-shape2"></span>
+                            <span class="hover-shape3"></span>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+            <!-- Canvas Menu end -->
+        </header>
+        <!--Header End-->
+
+
+        <!-- Breadcrumbs Section Start -->
+        <div class="gamfi-breadcrumbs-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <div class="breadcrumbs-area sec-heading">
+                            <div class="sub-inner mb-15">
+                                <a class="breadcrumbs-link" href="index.html">Home</a>
+                                <span class="sub-title">Leaderboard</span>
+                                <img class="heading-left-image" src="assets/images/icons/steps.png" alt="Steps-Image" />
+                            </div>
+                            <h2 class="title mb-0">Leaderboard</h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 breadcrumbs-form mr-0 md-pt-30">
+                        <form>
+                            <input type="text" id="Search" name="search" placeholder="Search by name, token, address">
+                            <span class="submit"><i class="icon-search"></i><input type="submit"></span>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Breadcrumbs  Section End -->
+
+        <!-- Leaderboard List Start -->
+        <div class="leaderboard-table-list pb-140 md-pb-80 pt-55">
+            <div class="container">
+                <table>
+                    <tr>
+                        <th># RANK</th>
+                   
+                        <th>Public Key</th>
+                        <th>Deposit </th>
+                        <th>Profit </th>
+                    </tr>
+                    <tr style="display:none ;" id="zero" >
+                        <td>01</td>
+                      
+                        <td id="addre" >0x95e441....ddd97400</td>
+                        <td id="depo" >365 Days</td>
+                        <td id="pro" > 111 </td>
+                    </tr>
+                    <tr style="display:none ;" id="one">
+                        <td>02</td>
+                
+                        <td>0x842db9....c03d141f</td>
+                        <td>185 Days</td>
+                        <td>$50,899.00</td>
+                    </tr>
+                    <tr  style="display:none ;" id="two">
+                        <td>03</td>
+                        
+                        <td>0x8de8be....48be4556</td>
+                        <td>90 Days</td>
+                        <td>$258,69.28</td>
+                    </tr>
+                    <tr style="display:none ;" id="three">
+                        <td>04</td>
+                   
+                        <td>0xb83166....a9a8dc0d</td>
+                        <td>60 Days</td>
+                        <td>$33,855.90</td>
+                    </tr>
+                    <tr style="display:none ;" id="four">
+                        <td>05</td>
+                      
+                        <td>0x8637ab....a1b8674a</td>
+                        <td>365 Days</td>
+                        <td>$305,626.99</td>
+                    </tr>
+                    <tr  style="display:none ;" id="five">
+                        <td>06</td>
+                       
+                        <td>0x95e441....ddd97400</td>
+                        <td>365 Days</td>
+                        <td>$305,626.99</td>
+                    </tr>
+                    <tr style="display:none ;"  id="six">
+                        <td>07</td>
+                       
+                        <td>0xb32cae....d2879700</td>
+                        <td>285 Days</td>
+                        <td>$896,626.00</td>
+                    </tr>
+                    <tr style="display:none ;" id="seven">
+                        <td>08</td>
+                      
+                        <td>0x95e441....ddd97400</td>
+                        <td>90 Days</td>
+                        <td>$305,626.99</td>
+                    </tr>
+                    <tr  style="display:none ;" id="eight"> 
+                        <td>09</td>
+                    
+                        <td>0x864d68....a0b805b8</td>
+                        <td>30 Days</td>
+                        <td>$22,852.90</td>
+                    </tr>
+                    <tr  style="display:none ;" id="nine">
+                        <td>10</td>
+                
+                        <td>0x8504e3....7d3b33b2</td>
+                        <td>365 Days</td>
+                        <td>$305,626.55</td>
+                    </tr>
+                   
+                </table>
+                <div class="gamfi-navigation text-center mt-40">
+                    <ul>
+                        <li><a class="active" href="#"><i class="icon-Vector"></i></a></li>
+                        <li><a class="active" href="#">1</a></li>
+                       
+                        <li><a href="#"><i class="icon-arrow_right"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Leaderboard List End -->
+
+        <!-- Footer Section Start -->
+        <div class="gamfi-footer-section"> 
+            <!-- <div class="container">
+                <div class="footer-cta-area text-center active-shape hover-shape-inner">
+                    <h2 class="title mb-15">
+                        Apply for project<br />
+                        incubation
+                    </h2>
+                    <div class="dsc mb-40">
+                        If you want to lanuch an IGO/IDO, It will be your perfect choice
+                    </div>
+                    <a class="banner-btn wow fadeInUp black-shape" data-wow-delay="300ms" data-wow-duration="2500ms" href="igo-apply.html">
+                        <span class="btn-text">Apply For IGO</span>
+                        <span class="hover-shape1"></span>
+                        <span class="hover-shape2"></span>
+                        <span class="hover-shape3"></span>
+                    </a>
+                    <span class="border-shadow shadow-1"></span>
+                    <span class="border-shadow shadow-2"></span>
+                    <span class="border-shadow shadow-3"></span>
+                    <span class="border-shadow shadow-4"></span>
+                    <span class="hover-shape-bg hover_shape1"></span>
+                    <span class="hover-shape-bg hover_shape2"></span>
+                    <span class="hover-shape-bg hover_shape3"></span>
+                </div>
+            </div> -->
+            <div class="footer-area">
+                <div class="container">
+                    <div class="sec-heading text-center">
+                        <div class="sub-inner mb-52">
+                            <img class="heading-right-image" src="assets/images/icons/steps2.png" alt="Steps-Image"/>
+                            <span class="sub-title white-color">Find us on Social</span>
+                            <img class="heading-left-image" src="assets/images/icons/steps.png" alt="Steps-Image"/>
+                        </div>
+                    </div>
+                    <div class="footer-listing text-center mb-100 md-mb-70">
+                        <ul class="footer-icon-list">
+                            <li><a href="#"><i class="icon-twitter"></i></a></li>
+                            <li><a href="#"><i class="icon-telegram"></i></a></li>
+                            <!-- <li><a href="#"><i class="icon-medium"></i></a></li>
+                            <li><a href="#"><i class="icon-discord"></i></a></li>
+                            <li><a href="#"><i class="icon-linkedin"></i></a></li>
+                            <li><a href="#"><i class="icon-instagram"></i></a></li>
+                            <li><a href="#"><i class="icon-facebook"></i></a></li> -->
+                        </ul>
+                    </div>
+                    <div class="footer-logo text-center mb-45">
+                        <img src="/assets/images/logo1.png" alt="Footer-logo" />
+                    </div>
+                    <div class="footer-mainmenu text-center mb-20">
+                        <!-- <ul>
+                            <li><a href="#">Features</a></li>
+                            <li><a href="#">How it works</a></li>
+                            <li><a href="#">Token info</a></li>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Social media</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul> -->
+                    </div>
+                    <div class="copyright-area text-center mb-0">
+                        <div class="dsc mb-37">Copyright © 2022. All Rights Reserved by <a target="_blank" class="gafi" href="#">BTCBULLDOG</a></div>
+                    </div>
+                    <div class="scrollup text-center">
+                        <a href="#"><i class="icon-arrow_up"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- Footer Section End -->
+
+        <!-- Modal Section Start-->
+        <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                         <h4 class="modals-title  mb-0" id="exampleModalLabel">Connect Wallet</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="icon-x"></i></button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="mb-20">Please select a wallet to connect to this marketplace</p>
+                        <div class="connect-section">
+                            <!-- <ul class="heading-list">
+                                <li><a href="#"><span><img src="assets/images/icons/meta-mask.png" alt="Meta-mask-Image"></span>MetaMask</a></li>
+                                <li><a href="#"><span><img src="assets/images/icons/coinbase.png" alt="Coinbase-Image"></span>Coinbase</a></li>
+                                <li><a href="#"><span><img src="assets/images/icons/trust.png" alt="Trust-Image"></span>Trust Wallet</a></li>
+                                <li><a href="#"><span><img src="assets/images/icons/wallet.png" alt="Wallet-Image"></span>WalletConnect</a></li>
+                            </ul> -->
+                        </div>
+                        <p>By connecting your wallet, you agree to our <a href="#"><span class="modal-title">Terms of Service </span></a>and our <a href="#"><span class="modal-title"> Privacy Policy</span></a>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Section End-->
+        
+        <!-- modernizr js -->
+        <script src="assets/js/modernizr-2.8.3.min.js"></script>
+        <!-- jquery latest version -->
+        <script src="assets/js/jquery.min.js"></script>
+        <!-- Bootstrap v4.4.1 js -->
+        <script src="assets/js/bootstrap.min.js"></script>
+        <!-- popup.min js -->
+        <script src="assets/js/jquery.magnific-popup.min.js"></script>
+        <!-- imagesloaded.pkgd.min js -->
+        <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+        <!-- wow js -->
+        <script src="assets/js/wow.min.js"></script>
+        <script src="assets/js/jquery.counterup.min.js"></script>
+        <!-- counter top js -->
+        <script src="assets/js/waypoints.min.js"></script>
+        <!-- owl.carousel js -->
+        <script src="assets/js/owl.carousel.min.js"></script>
+        <!-- plugins js -->
+        <script src="assets/js/plugins.js"></script>
+        <!-- main js -->
+        <script src="assets/js/main.js"></script>
+
+
+
+        <script>
+
+
+
+
+            window.addEventListener('load', async () => {
+                console.log("hi");
+             
+              if (window.ethereum) {
+                  window.web3 = new Web3(ethereum);
+                  try {
+                    
+                      await ethereum.enable();
+                      
+                    
+                var accounts = await window.web3.eth.getAccounts();
+                console.log("account is " ,accounts);
+                document.getElementById("wal").innerHTML=  accounts[0].slice(0,4) + "..." + accounts[0].slice(-2) ;
+                // document.getElementById("swallet").innerHTML=  accounts[0].slice(0,4) + "..." + accounts[0].slice(-2) ;
+                
+
+
+
+ var abi_usdt = [{"inputs":[],"payable":false,"stateMutability":"nonpayable","type":"constructor"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"owner","type":"address"},{"indexed":true,"internalType":"address","name":"spender","type":"address"},{"indexed":false,"internalType":"uint256","name":"value","type":"uint256"}],"name":"Approval","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"previousOwner","type":"address"},{"indexed":true,"internalType":"address","name":"newOwner","type":"address"}],"name":"OwnershipTransferred","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"from","type":"address"},{"indexed":true,"internalType":"address","name":"to","type":"address"},{"indexed":false,"internalType":"uint256","name":"value","type":"uint256"}],"name":"Transfer","type":"event"},{"constant":true,"inputs":[],"name":"_decimals","outputs":[{"internalType":"uint8","name":"","type":"uint8"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"_name","outputs":[{"internalType":"string","name":"","type":"string"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"_symbol","outputs":[{"internalType":"string","name":"","type":"string"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"internalType":"address","name":"owner","type":"address"},{"internalType":"address","name":"spender","type":"address"}],"name":"allowance","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"internalType":"address","name":"spender","type":"address"},{"internalType":"uint256","name":"amount","type":"uint256"}],"name":"approve","outputs":[{"internalType":"bool","name":"","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[{"internalType":"address","name":"account","type":"address"}],"name":"balanceOf","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"internalType":"uint256","name":"amount","type":"uint256"}],"name":"burn","outputs":[{"internalType":"bool","name":"","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"decimals","outputs":[{"internalType":"uint8","name":"","type":"uint8"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"internalType":"address","name":"spender","type":"address"},{"internalType":"uint256","name":"subtractedValue","type":"uint256"}],"name":"decreaseAllowance","outputs":[{"internalType":"bool","name":"","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"getOwner","outputs":[{"internalType":"address","name":"","type":"address"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"internalType":"address","name":"spender","type":"address"},{"internalType":"uint256","name":"addedValue","type":"uint256"}],"name":"increaseAllowance","outputs":[{"internalType":"bool","name":"","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"internalType":"uint256","name":"amount","type":"uint256"}],"name":"mint","outputs":[{"internalType":"bool","name":"","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"name","outputs":[{"internalType":"string","name":"","type":"string"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"owner","outputs":[{"internalType":"address","name":"","type":"address"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[],"name":"renounceOwnership","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"symbol","outputs":[{"internalType":"string","name":"","type":"string"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"totalSupply","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"internalType":"address","name":"recipient","type":"address"},{"internalType":"uint256","name":"amount","type":"uint256"}],"name":"transfer","outputs":[{"internalType":"bool","name":"","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"internalType":"address","name":"sender","type":"address"},{"internalType":"address","name":"recipient","type":"address"},{"internalType":"uint256","name":"amount","type":"uint256"}],"name":"transferFrom","outputs":[{"internalType":"bool","name":"","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"internalType":"address","name":"newOwner","type":"address"}],"name":"transferOwnership","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"}];
+        var contract_address_usdt= '0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56';  
+
+
+           
+ var abi_INC = [{"inputs":[],"stateMutability":"nonpayable","type":"constructor"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"_owner","type":"address"},{"indexed":true,"internalType":"address","name":"spender","type":"address"},{"indexed":false,"internalType":"uint256","name":"value","type":"uint256"}],"name":"Approval","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"from","type":"address"},{"indexed":true,"internalType":"address","name":"to","type":"address"},{"indexed":false,"internalType":"uint256","name":"value","type":"uint256"}],"name":"Transfer","type":"event"},{"inputs":[{"internalType":"address","name":"sender","type":"address"},{"internalType":"address","name":"spender","type":"address"}],"name":"allowance","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"spender","type":"address"},{"internalType":"uint256","name":"amount","type":"uint256"}],"name":"approve","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"account","type":"address"}],"name":"balanceOf","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"decimals","outputs":[{"internalType":"uint8","name":"","type":"uint8"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"spender","type":"address"},{"internalType":"uint256","name":"subtractedValue","type":"uint256"}],"name":"decreaseAllowance","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"getTotaldrop","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"spender","type":"address"},{"internalType":"uint256","name":"addedValue","type":"uint256"}],"name":"increaseAllowance","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"name","outputs":[{"internalType":"string","name":"","type":"string"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"owner","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"_tax","type":"uint256"}],"name":"setTax","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"symbol","outputs":[{"internalType":"string","name":"","type":"string"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"totalSupply","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"recipient","type":"address"},{"internalType":"uint256","name":"amount","type":"uint256"}],"name":"transfer","outputs":[{"internalType":"bool","name":"success","type":"bool"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"sender","type":"address"},{"internalType":"address","name":"recipient","type":"address"},{"internalType":"uint256","name":"amount","type":"uint256"}],"name":"transferFrom","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"nonpayable","type":"function"},{"stateMutability":"payable","type":"receive"}];
+        var contract_address_INC= '0xC6e37bBe729E70660a940Ba8a7a15A53E81ee766'; 
+        
+        
+     
+        var abi = [{"inputs":[{"internalType":"contract IERC20","name":"_USDT","type":"address"},{"internalType":"contract IERC20","name":"_INC","type":"address"}],"stateMutability":"payable","type":"constructor"},{"inputs":[{"internalType":"address","name":"","type":"address"}],"name":"Remainingstaking","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"","type":"address"}],"name":"customHasStaked","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"","type":"address"}],"name":"customIsStakingAtm","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"","type":"uint256"}],"name":"customStakers","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"","type":"address"}],"name":"customStakingBalance","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"customTotalStaked","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"dailyreward","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"","type":"address"}],"name":"hasStaked","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"","type":"address"}],"name":"isStakingAtm","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"","type":"address"}],"name":"myProfit","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"name","outputs":[{"internalType":"string","name":"","type":"string"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"","type":"address"}],"name":"nextPayment","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"owner","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"balanc","type":"uint256"}],"name":"rewardcal","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"pure","type":"function"},{"inputs":[{"internalType":"uint256","name":"_amount","type":"uint256"}],"name":"stakeTokens","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"uint256","name":"","type":"uint256"}],"name":"staker","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"","type":"uint256"}],"name":"stakers","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"","type":"address"}],"name":"stakingBalance","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"","type":"address"}],"name":"staking_end_time","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"","type":"address"}],"name":"staking_start_time","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"_amount","type":"uint256"}],"name":"thirtyreward","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"totalDepositer","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"totalStaked","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"newOwner","type":"address"}],"name":"transferOwnership","outputs":[],"stateMutability":"nonpayable","type":"function"}];
+        var contract_address= '0x8Bc841B6dDCD69e7F124B334E1b86aA8410FeE07'; 
+
+
+
+                  var instance = new web3.eth.Contract(
+                  abi,
+                  contract_address
+                );
+
+        
+            
+                  var address = await instance.methods.stakers(0)
+                  .call();
+
+                  var balacestake = await instance.methods.stakingBalance( address).call();
+                 
+                
+            
+                  var myTotalProfit = await instance.methods.myProfit(address)
+                  .call();
+            
+                  document.getElementById("zero").style.display="block";
+            
+                //   =======================================
+            
+                  document.getElementById("addre").innerHTML=   address.slice(0,8) + "..." + address.slice(-4) ;
+            
+                  document.getElementById("depo").innerHTML= balacestake / 1000000000000000000 ;
+                  document.getElementById("pro").innerHTML= myTotalProfit  / 1000000000000000000 ;
+
+
+                            //  ==================//
+
+
+
+                  var address1 = await instance.methods.stakers(1)
+                  .call();
+
+                  var balacestake1 = await instance.methods.stakingBalance( address1).call();
+                 
+                
+            
+                  var myTotalProfit1 = await instance.methods.myProfit(address1)
+                  .call();
+            
+                
+                  document.getElementById("one").style.display="block";
+                //   =======================================
+            
+                  document.getElementById("addre1").innerHTML=   address1.slice(0,8) + "..." + address1.slice(-4) ;
+            
+                  document.getElementById("depo1").innerHTML= balacestake1 / 1000000000000000000 ;
+                  document.getElementById("pro1").innerHTML= myTotalProfit1  / 1000000000000000000 ;
+
+
+                            //  ==================//
+
+
+
+
+                  var address2 = await instance.methods.stakers(2)
+                  .call();
+
+                  var balacestake2 = await instance.methods.stakingBalance( address2).call();
+                 
+                
+            
+                  var myTotalProfit2 = await instance.methods.myProfit(address2)
+                  .call();
+
+                  document.getElementById("two").style.display="block";
+            
+                
+            
+                //   =======================================
+            
+                  document.getElementById("addre2").innerHTML=   address2.slice(0,8) + "..." + address2.slice(-4) ;
+            
+                  document.getElementById("depo2").innerHTML= balacestake2 / 1000000000000000000 ;
+                  document.getElementById("pro2").innerHTML= myTotalProfit2  / 1000000000000000000 ;
+
+
+                            //  ==================//
+
+
+
+                  var address3 = await instance.methods.stakers(3)
+                  .call();
+
+                  var balacestake3 = await instance.methods.stakingBalance( address3).call();
+                 
+                
+            
+                  var myTotalProfit3 = await instance.methods.myProfit(address3)
+                  .call();
+            
+                  document.getElementById("three").style.display="block";
+            
+                //   =======================================
+            
+                  document.getElementById("addre3").innerHTML=   address3.slice(0,8) + "..." + address3.slice(-4) ;
+            
+                  document.getElementById("depo3").innerHTML= balacestake3 / 1000000000000000000 ;
+                  document.getElementById("pro3").innerHTML= myTotalProfit3  / 1000000000000000000 ;
+
+
+                            //  ==================//
+
+
+
+                  var address4 = await instance.methods.stakers(4)
+                  .call();
+
+                  var balacestake4 = await instance.methods.stakingBalance( address4).call();
+                 
+                
+            
+                  var myTotalProfit4 = await instance.methods.myProfit(address4)
+                  .call();
+            
+                  document.getElementById("four").style.display="block";
+            
+                //   =======================================
+            
+                  document.getElementById("addre4").innerHTML=   address4.slice(0,8) + "..." + address4.slice(-4) ;
+            
+                  document.getElementById("depo4").innerHTML= balacestake4 / 1000000000000000000 ;
+                  document.getElementById("pro4").innerHTML= myTotalProfit4  / 1000000000000000000 ;
+
+
+                            //  ==================//
+
+
+                            var address5 = await instance.methods.stakers(5)
+                  .call();
+
+                  var balacestake5 = await instance.methods.stakingBalance( address5).call();
+                 
+                
+            
+                  var myTotalProfit5 = await instance.methods.myProfit(address5)
+                  .call();
+            
+                  document.getElementById("five").style.display="block";
+            
+                //   =======================================
+            
+                  document.getElementById("addre5").innerHTML=   address5.slice(0,8) + "..." + address5.slice(-4) ;
+            
+                  document.getElementById("depo5").innerHTML= balacestake5 / 1000000000000000000 ;
+                  document.getElementById("pro5").innerHTML= myTotalProfit5  / 1000000000000000000 ;
+
+
+                            //  ==================//
+
+
+
+                            var address6 = await instance.methods.stakers(6)
+                  .call();
+
+                  var balacestake6 = await instance.methods.stakingBalance( address6).call();
+                 
+                
+            
+                  var myTotalProfit6 = await instance.methods.myProfit(address6)
+                  .call();
+            
+                
+                  document.getElementById("six").style.display="block";
+                //   =======================================
+            
+                  document.getElementById("addre6").innerHTML=   address6.slice(0,8) + "..." + address6.slice(-4) ;
+            
+                  document.getElementById("depo6").innerHTML= balacestake6 / 1000000000000000000 ;
+                  document.getElementById("pro6").innerHTML= myTotalProfit6  / 1000000000000000000 ;
+
+
+                            //  ==================//
+
+
+
+
+                            var address7 = await instance.methods.stakers(7)
+                  .call();
+
+                  var balacestake7 = await instance.methods.stakingBalance( address7).call();
+                 
+                
+            
+                  var myTotalProfit7 = await instance.methods.myProfit(address7)
+                  .call();
+            
+                
+                  document.getElementById("seven").style.display="block";
+                //   =======================================
+            
+                  document.getElementById("addre7").innerHTML=   address7.slice(0,8) + "..." + address7.slice(-4) ;
+            
+                  document.getElementById("depo7").innerHTML= balacestake7 / 1000000000000000000 ;
+                  document.getElementById("pro7").innerHTML= myTotalProfit7  / 1000000000000000000 ;
+
+
+                            //  ==================//
+
+
+
+                            var address8 = await instance.methods.stakers(8)
+                  .call();
+
+                  var balacestake8 = await instance.methods.stakingBalance( address8).call();
+                 
+                
+            
+                  var myTotalProfit8 = await instance.methods.myProfit(address8)
+                  .call();
+            
+                
+                  document.getElementById("eight").style.display="block";
+                //   =======================================
+            
+                  document.getElementById("addre8").innerHTML=   address8.slice(0,8) + "..." + address8.slice(-4) ;
+            
+                  document.getElementById("depo8").innerHTML= balacestake8 / 1000000000000000000 ;
+                  document.getElementById("pro8").innerHTML= myTotalProfit8  / 1000000000000000000 ;
+
+
+                            //  ==================//
+
+
+
+                            var address9 = await instance.methods.stakers(9)
+                  .call();
+
+                  var balacestake9 = await instance.methods.stakingBalance( address9).call();
+                 
+                
+            
+                  var myTotalProfit9 = await instance.methods.myProfit(address9)
+                  .call();
+            
+                
+                  document.getElementById("nine").style.display="block";
+                //   =======================================
+            
+                  document.getElementById("addre9").innerHTML=   address9.slice(0,8) + "..." + address9.slice(-4) ;
+            
+                  document.getElementById("depo9").innerHTML= balacestake9 / 1000000000000000000 ;
+                  document.getElementById("pro9").innerHTML= myTotalProfit9  / 1000000000000000000 ;
+
+
+                            //  ==================//
+
+
+
+
+
+                     
+
+                     
+
+                 
+            
+            // ================================
+            
+                // this.setState({ account: accounts[0] });
+              console.log("Sender :  " + accounts[0]);
+                      console.log('1111');
+                      //call function to connect contract
+                      //  ConnectToContract();
+
+
+                     
+            
+                  } catch (error) {
+                      // User denied account access...
+                  }
+              }
+              // Legacy dapp browsers...
+              else if (window.web3) {
+                  window.web3 = new Web3(web3.currentProvider);
+                  // Acccounts always exposed
+                  // web3.eth.sendTransaction({/* ... */});
+              }
+              // Non-dapp browsers...
+              else {
+                alert("please install metamask")
+                  console.log('Non-Ethereum browser detected. You should consider trying MetaMask!');
+              }
+            })
+            
+            
+            
+            
+            
+            
+             async function depositToken(){
+            
+                var accounts = await window.web3.eth.getAccounts();
+                console.log("account is " ,accounts);
+                //  document.getElementById("deposit").innerHTML=  accounts[0].slice(0,4) + "..." + accounts[0].slice(-2) ;
+                // document.getElementById("swallet").innerHTML=  accounts[0].slice(0,4) + "..." + accounts[0].slice(-2) ;
+              
+            
+                
+                    
+                    
+ var abi_usdt = [{"inputs":[],"payable":false,"stateMutability":"nonpayable","type":"constructor"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"owner","type":"address"},{"indexed":true,"internalType":"address","name":"spender","type":"address"},{"indexed":false,"internalType":"uint256","name":"value","type":"uint256"}],"name":"Approval","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"previousOwner","type":"address"},{"indexed":true,"internalType":"address","name":"newOwner","type":"address"}],"name":"OwnershipTransferred","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"from","type":"address"},{"indexed":true,"internalType":"address","name":"to","type":"address"},{"indexed":false,"internalType":"uint256","name":"value","type":"uint256"}],"name":"Transfer","type":"event"},{"constant":true,"inputs":[],"name":"_decimals","outputs":[{"internalType":"uint8","name":"","type":"uint8"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"_name","outputs":[{"internalType":"string","name":"","type":"string"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"_symbol","outputs":[{"internalType":"string","name":"","type":"string"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"internalType":"address","name":"owner","type":"address"},{"internalType":"address","name":"spender","type":"address"}],"name":"allowance","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"internalType":"address","name":"spender","type":"address"},{"internalType":"uint256","name":"amount","type":"uint256"}],"name":"approve","outputs":[{"internalType":"bool","name":"","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[{"internalType":"address","name":"account","type":"address"}],"name":"balanceOf","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"internalType":"uint256","name":"amount","type":"uint256"}],"name":"burn","outputs":[{"internalType":"bool","name":"","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"decimals","outputs":[{"internalType":"uint8","name":"","type":"uint8"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"internalType":"address","name":"spender","type":"address"},{"internalType":"uint256","name":"subtractedValue","type":"uint256"}],"name":"decreaseAllowance","outputs":[{"internalType":"bool","name":"","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"getOwner","outputs":[{"internalType":"address","name":"","type":"address"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"internalType":"address","name":"spender","type":"address"},{"internalType":"uint256","name":"addedValue","type":"uint256"}],"name":"increaseAllowance","outputs":[{"internalType":"bool","name":"","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"internalType":"uint256","name":"amount","type":"uint256"}],"name":"mint","outputs":[{"internalType":"bool","name":"","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"name","outputs":[{"internalType":"string","name":"","type":"string"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"owner","outputs":[{"internalType":"address","name":"","type":"address"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[],"name":"renounceOwnership","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"symbol","outputs":[{"internalType":"string","name":"","type":"string"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"totalSupply","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"internalType":"address","name":"recipient","type":"address"},{"internalType":"uint256","name":"amount","type":"uint256"}],"name":"transfer","outputs":[{"internalType":"bool","name":"","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"internalType":"address","name":"sender","type":"address"},{"internalType":"address","name":"recipient","type":"address"},{"internalType":"uint256","name":"amount","type":"uint256"}],"name":"transferFrom","outputs":[{"internalType":"bool","name":"","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"internalType":"address","name":"newOwner","type":"address"}],"name":"transferOwnership","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"}];
+        var contract_address_usdt= '0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56';  
+
+
+           
+ var abi_INC = [{"inputs":[],"stateMutability":"nonpayable","type":"constructor"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"_owner","type":"address"},{"indexed":true,"internalType":"address","name":"spender","type":"address"},{"indexed":false,"internalType":"uint256","name":"value","type":"uint256"}],"name":"Approval","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"from","type":"address"},{"indexed":true,"internalType":"address","name":"to","type":"address"},{"indexed":false,"internalType":"uint256","name":"value","type":"uint256"}],"name":"Transfer","type":"event"},{"inputs":[{"internalType":"address","name":"sender","type":"address"},{"internalType":"address","name":"spender","type":"address"}],"name":"allowance","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"spender","type":"address"},{"internalType":"uint256","name":"amount","type":"uint256"}],"name":"approve","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"account","type":"address"}],"name":"balanceOf","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"decimals","outputs":[{"internalType":"uint8","name":"","type":"uint8"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"spender","type":"address"},{"internalType":"uint256","name":"subtractedValue","type":"uint256"}],"name":"decreaseAllowance","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"getTotaldrop","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"spender","type":"address"},{"internalType":"uint256","name":"addedValue","type":"uint256"}],"name":"increaseAllowance","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"name","outputs":[{"internalType":"string","name":"","type":"string"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"owner","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"_tax","type":"uint256"}],"name":"setTax","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"symbol","outputs":[{"internalType":"string","name":"","type":"string"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"totalSupply","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"recipient","type":"address"},{"internalType":"uint256","name":"amount","type":"uint256"}],"name":"transfer","outputs":[{"internalType":"bool","name":"success","type":"bool"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"sender","type":"address"},{"internalType":"address","name":"recipient","type":"address"},{"internalType":"uint256","name":"amount","type":"uint256"}],"name":"transferFrom","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"nonpayable","type":"function"},{"stateMutability":"payable","type":"receive"}];
+        var contract_address_INC= '0xC6e37bBe729E70660a940Ba8a7a15A53E81ee766'; 
+        
+        
+        var abi = [{"inputs":[{"internalType":"contract IERC20","name":"_USDT","type":"address"},{"internalType":"contract IERC20","name":"_INC","type":"address"}],"stateMutability":"payable","type":"constructor"},{"inputs":[{"internalType":"address","name":"","type":"address"}],"name":"Remainingstaking","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"customAPY","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"","type":"address"}],"name":"customHasStaked","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"","type":"address"}],"name":"customIsStakingAtm","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"","type":"uint256"}],"name":"customStakers","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"","type":"address"}],"name":"customStakingBalance","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"customTotalStaked","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"dailyreward","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"defaultAPY","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"","type":"address"}],"name":"hasStaked","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"","type":"address"}],"name":"isStakingAtm","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"","type":"address"}],"name":"myProfit","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"name","outputs":[{"internalType":"string","name":"","type":"string"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"owner","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"balanc","type":"uint256"}],"name":"rewardcal","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"pure","type":"function"},{"inputs":[{"internalType":"uint256","name":"_amount","type":"uint256"}],"name":"stakeTokens","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"uint256","name":"","type":"uint256"}],"name":"staker","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"","type":"uint256"}],"name":"stakers","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"","type":"address"}],"name":"stakingBalance","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"","type":"address"}],"name":"staking_end_time","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"","type":"address"}],"name":"staking_start_time","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"_amount","type":"uint256"}],"name":"thirtyreward","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"totalDepositer","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"totalStaked","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"newOwner","type":"address"}],"name":"transferOwnership","outputs":[],"stateMutability":"nonpayable","type":"function"}];
+        var contract_address= '0xEDc0E1b2384405Cf45c98043aB5b75cF8314a107'; 
+
+                
+            
+               var val = document.getElementById("deposit").value;
+               console.log(val);
+                
+               var value = Web3.utils.toWei(val, 'ether');
+                var instance = new web3.eth.Contract(
+                  abi,
+                  contract_address
+                );
+                
+              await instance.methods.stakeTokens(value)
+                  .send({from : accounts[0]});
+             }
+            
+            
+             async function dailyrewrd(){
+            
+            var accounts = await window.web3.eth.getAccounts();
+            console.log("account is " ,accounts);
+            //  document.getElementById("deposit").innerHTML=  accounts[0].slice(0,4) + "..." + accounts[0].slice(-2) ;
+            // document.getElementById("swallet").innerHTML=  accounts[0].slice(0,4) + "..." + accounts[0].slice(-2) ;
+            
+            
+            
+                
+ var abi_usdt = [{"inputs":[],"payable":false,"stateMutability":"nonpayable","type":"constructor"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"owner","type":"address"},{"indexed":true,"internalType":"address","name":"spender","type":"address"},{"indexed":false,"internalType":"uint256","name":"value","type":"uint256"}],"name":"Approval","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"previousOwner","type":"address"},{"indexed":true,"internalType":"address","name":"newOwner","type":"address"}],"name":"OwnershipTransferred","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"from","type":"address"},{"indexed":true,"internalType":"address","name":"to","type":"address"},{"indexed":false,"internalType":"uint256","name":"value","type":"uint256"}],"name":"Transfer","type":"event"},{"constant":true,"inputs":[],"name":"_decimals","outputs":[{"internalType":"uint8","name":"","type":"uint8"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"_name","outputs":[{"internalType":"string","name":"","type":"string"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"_symbol","outputs":[{"internalType":"string","name":"","type":"string"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"internalType":"address","name":"owner","type":"address"},{"internalType":"address","name":"spender","type":"address"}],"name":"allowance","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"internalType":"address","name":"spender","type":"address"},{"internalType":"uint256","name":"amount","type":"uint256"}],"name":"approve","outputs":[{"internalType":"bool","name":"","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[{"internalType":"address","name":"account","type":"address"}],"name":"balanceOf","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"internalType":"uint256","name":"amount","type":"uint256"}],"name":"burn","outputs":[{"internalType":"bool","name":"","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"decimals","outputs":[{"internalType":"uint8","name":"","type":"uint8"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"internalType":"address","name":"spender","type":"address"},{"internalType":"uint256","name":"subtractedValue","type":"uint256"}],"name":"decreaseAllowance","outputs":[{"internalType":"bool","name":"","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"getOwner","outputs":[{"internalType":"address","name":"","type":"address"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"internalType":"address","name":"spender","type":"address"},{"internalType":"uint256","name":"addedValue","type":"uint256"}],"name":"increaseAllowance","outputs":[{"internalType":"bool","name":"","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"internalType":"uint256","name":"amount","type":"uint256"}],"name":"mint","outputs":[{"internalType":"bool","name":"","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"name","outputs":[{"internalType":"string","name":"","type":"string"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"owner","outputs":[{"internalType":"address","name":"","type":"address"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[],"name":"renounceOwnership","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"symbol","outputs":[{"internalType":"string","name":"","type":"string"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"totalSupply","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"internalType":"address","name":"recipient","type":"address"},{"internalType":"uint256","name":"amount","type":"uint256"}],"name":"transfer","outputs":[{"internalType":"bool","name":"","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"internalType":"address","name":"sender","type":"address"},{"internalType":"address","name":"recipient","type":"address"},{"internalType":"uint256","name":"amount","type":"uint256"}],"name":"transferFrom","outputs":[{"internalType":"bool","name":"","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"internalType":"address","name":"newOwner","type":"address"}],"name":"transferOwnership","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"}];
+        var contract_address_usdt= '0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56';  
+
+
+           
+ var abi_INC = [{"inputs":[],"stateMutability":"nonpayable","type":"constructor"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"_owner","type":"address"},{"indexed":true,"internalType":"address","name":"spender","type":"address"},{"indexed":false,"internalType":"uint256","name":"value","type":"uint256"}],"name":"Approval","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"from","type":"address"},{"indexed":true,"internalType":"address","name":"to","type":"address"},{"indexed":false,"internalType":"uint256","name":"value","type":"uint256"}],"name":"Transfer","type":"event"},{"inputs":[{"internalType":"address","name":"sender","type":"address"},{"internalType":"address","name":"spender","type":"address"}],"name":"allowance","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"spender","type":"address"},{"internalType":"uint256","name":"amount","type":"uint256"}],"name":"approve","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"account","type":"address"}],"name":"balanceOf","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"decimals","outputs":[{"internalType":"uint8","name":"","type":"uint8"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"spender","type":"address"},{"internalType":"uint256","name":"subtractedValue","type":"uint256"}],"name":"decreaseAllowance","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"getTotaldrop","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"spender","type":"address"},{"internalType":"uint256","name":"addedValue","type":"uint256"}],"name":"increaseAllowance","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"name","outputs":[{"internalType":"string","name":"","type":"string"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"owner","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"_tax","type":"uint256"}],"name":"setTax","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"symbol","outputs":[{"internalType":"string","name":"","type":"string"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"totalSupply","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"recipient","type":"address"},{"internalType":"uint256","name":"amount","type":"uint256"}],"name":"transfer","outputs":[{"internalType":"bool","name":"success","type":"bool"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"sender","type":"address"},{"internalType":"address","name":"recipient","type":"address"},{"internalType":"uint256","name":"amount","type":"uint256"}],"name":"transferFrom","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"nonpayable","type":"function"},{"stateMutability":"payable","type":"receive"}];
+        var contract_address_INC= '0xC6e37bBe729E70660a940Ba8a7a15A53E81ee766'; 
+        
+        
+        var abi = [{"inputs":[{"internalType":"contract IERC20","name":"_USDT","type":"address"},{"internalType":"contract IERC20","name":"_INC","type":"address"}],"stateMutability":"payable","type":"constructor"},{"inputs":[{"internalType":"address","name":"","type":"address"}],"name":"Remainingstaking","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"customAPY","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"","type":"address"}],"name":"customHasStaked","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"","type":"address"}],"name":"customIsStakingAtm","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"","type":"uint256"}],"name":"customStakers","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"","type":"address"}],"name":"customStakingBalance","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"customTotalStaked","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"dailyreward","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"defaultAPY","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"","type":"address"}],"name":"hasStaked","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"","type":"address"}],"name":"isStakingAtm","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"","type":"address"}],"name":"myProfit","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"name","outputs":[{"internalType":"string","name":"","type":"string"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"owner","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"balanc","type":"uint256"}],"name":"rewardcal","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"pure","type":"function"},{"inputs":[{"internalType":"uint256","name":"_amount","type":"uint256"}],"name":"stakeTokens","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"uint256","name":"","type":"uint256"}],"name":"staker","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"","type":"uint256"}],"name":"stakers","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"","type":"address"}],"name":"stakingBalance","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"","type":"address"}],"name":"staking_end_time","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"","type":"address"}],"name":"staking_start_time","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"_amount","type":"uint256"}],"name":"thirtyreward","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"totalDepositer","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"totalStaked","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"newOwner","type":"address"}],"name":"transferOwnership","outputs":[],"stateMutability":"nonpayable","type":"function"}];
+        var contract_address= '0xEDc0E1b2384405Cf45c98043aB5b75cF8314a107'; 
+
+            
+            
+            
+            
+            
+            var instance = new web3.eth.Contract(
+              abi,
+              contract_address
+            );
+            
+            await instance.methods.dailyreward()
+              .send({from : accounts[0]});
+            }
+            
+            
+            
+            
+            
+            
+            
+                        function openTab(evt, cityName) {
+                            var i, tabcontent, tablinks;
+                            tabcontent = document.getElementsByClassName("StakeTabcontent");
+                            for (i = 0; i < tabcontent.length; i++) {
+                                tabcontent[i].style.display = "none";
+                            }
+                            tablinks = document.getElementsByClassName("StakeTablinks");
+                            for (i = 0; i < tablinks.length; i++) {
+                                tablinks[i].className = tablinks[i].className.replace(" active", "");
+                            }
+                            document.getElementById(cityName).style.display = "block";
+                            evt.currentTarget.className += " active";
+                        }
+            
+                        // Get the element with id="defaultOpen" and click on it
+                        document.getElementById("defaultOpen").click();
+            
+            
+                        async function connect(){
+            
+            
+            if (window.ethereum) {
+              window.web3 = new Web3(ethereum);
+              try {
+                  // Request account access if needed
+                  await ethereum.enable();
+                  
+                
+            var accounts = await window.web3.eth.getAccounts();
+            console.log("account is " ,accounts);
+            document.getElementById("wal").innerHTML=  accounts[0].slice(0,4) + "..." + accounts[0].slice(-2) ;
+            
+            
+            
+            
+            
+            
+            
+            console.log("Sender :  " + accounts[0]);
+                  console.log('1111');
+                  //call function to connect contract
+                  //  ConnectToContract();
+            
+              } catch (error) {
+                  // User denied account access...
+              }
+            }
+            // Legacy dapp browsers...
+            else if (window.web3) {
+              window.web3 = new Web3(web3.currentProvider);
+              // Acccounts always exposed
+              // web3.eth.sendTransaction({/* ... */});
+            }
+            // Non-dapp browsers...
+            else {
+            alert("please install metamask")
+              console.log('Non-Ethereum browser detected. You should consider trying MetaMask!');
+            }
+            }
+                    </script>
+
+
+
+
+
+    </body>
+
+<!-- Mirrored from uigaint.com/demo/html/Gamfi/leaderboard.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 27 Feb 2022 07:59:42 GMT -->
+
+<!-- Mirrored from www.lapad.co/leaderboard.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 15 Oct 2022 05:14:20 GMT -->
+</html>

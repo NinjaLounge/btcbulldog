@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="zxx">
+    
+<!-- Mirrored from uigaint.com/demo/html/Gamfi/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 27 Feb 2022 07:59:17 GMT -->
+
+<!-- Mirrored from www.lapad.co/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 15 Oct 2022 05:08:06 GMT -->
+<head>
+        <!-- meta tag -->
+        <meta charset="utf-8" />
+        <title>BTCBULLDOG </title>
+        <meta name="description" content="BTCBULLDOGNFT" />
+        <!-- responsive tag -->
+        <meta http-equiv="x-ua-compatible" content="BTCBULLDOGNFT" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!-- favicon -->
+        <link rel="apple-touch-icon" href="apple-touch-icon.html" />
+        <link rel="shortcut icon" type="image/x-icon" href="./assets/images/logo1.png" />
+        <script src="./node_modules/web3/dist/web3.min.js"></script>
+        <!-- Bootstrap v4.4.1 css -->
+        <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.min.css" />
+        <!-- animate css -->
+        <link rel="stylesheet" type="text/css" href="./assets/css/animate.css" />
+        <!-- magnific css -->
+        <link rel="stylesheet" type="text/css" href="./assets/css/magnific-popup.css" />
+        <!-- owl.carousel css -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="./assets/css/owl.carousel.css" />
+        <!-- off canvas css -->
+        <link rel="stylesheet" type="text/css" href="./assets/css/off-canvas.css" />
+        <!-- flaticon css  -->
+        <link rel="stylesheet" type="text/css" href="./assets/css/ico-moon-fonts.css" />
+        <!-- spacing css -->
+        <link rel="stylesheet" type="text/css" href="./assets/css/sc-spacing.css" />
+        <!-- style css -->
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <!-- responsive css -->
+        <link rel="stylesheet" type="text/css" href="./assets/css/responsive.css" />
+    </head>
+    <body class="defult-home">
+
+        <!--Preloader area start here-->
+        <section class="loader_first">
+            <div class="circular-spinner"></div>
+        </section>
+        <!--Preloader area End here-->
+
+        <!--Header Start-->
+        <header id="gamfi-header" class="gamfi-header-section default-header">
+            <div class="menu-area menu-sticky">
+                <div class="container">
+                    <div class="heaader-inner-area d-flex justify-content-between align-items-center">
+                        <div class="gamfi-logo-area d-flex justify-content-between align-items-center">
+                            <div class="logo">
+                                <a href="index.html"><img style="width: 100px; height: 100px;" src="./assets/images/logo1.png" alt="logo" /></a>
+                            </div>
+                            <div class="header-menu">
+                                <ul class="nav-menu">
+                                    <!-- <li><a href="index.html">Home</a></li>
+                                    <li><a href="project.html">Projects</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="project.html">Projects List</a></li>
+                                            <li><a href="explore.html">Projects Grid</a></li>
+                                            <li><a href="calendar.html">Project Calendar</a></li>
+                                            <li><a href="project-details.html">Project Details</a></li>
+                                        </ul>
+                                    </li> -->
+                                    <li><a href="https://btcbulldog.art/">Mint</a>
+                                        <!-- <ul class="sub-menu">
+                                            <li><a href="index.html">Staking 1</a></li>
+                                            <li><a href="staking-2.html">Staking 2</a></li>
+                                        </ul> -->
+                                    </li>
+                                    <!-- <li><a href="INC.html">BAG</a> -->
+                                        <!-- <ul class="sub-menu">
+                                            <li class="menu-item-has-children"><a href="kyc_process.html">KYC Process</a>
+                                                <ul class="sub-menu">
+                                                    <li><a href="kyc_process.html">KYC Step 1</a></li>
+                                                    <li><a href="kyc_process-Step2.html">KYC Step 2</a></li>
+                                                    <li><a href="kyc_process-Step3.html">KYC Step 3</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="menu-item-has-children"><a href="signin.html">Auth Pages</a>
+                                                <ul class="sub-menu">
+                                                    <li><a href="signUp.html">Sign Up</a></li>
+                                                    <li><a href="signin.html">Sign In</a></li>
+                                                    <li><a href="Forget-Password.html">Forgot Password</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="farm.html">Farming</a></li>
+                                            <li><a href="leaderboard.html">Leaderboard</a></li>
+                                            <li><a href="igo-ranking.html">IGO Ranking</a></li>
+                                            <li><a href="roadMap.html">INC</a></li>
+                                            <li><a href="teamdetails.html">Team Details</a></li>
+                                            <li><a href="Get-In-touch.html">Contact Us</a></li>
+                                            <li><a href="igo-apply.html">Apply For IGO</a></li>
+                                        </ul> -->
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="gamfi-btn-area">
+                            <ul>
+                                <li>
+                                    <a id="nav-expander" class="nav-expander bar" href="#">
+                                        <div class="bar">
+                                            <span class="dot1"></span>
+                                            <span class="dot2"></span>
+                                            <span class="dot3"></span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <!-- <li class="buy-token">
+                                    <a class="readon black-shape" href="#">
+                                        <span class="btn-text">Buy BAG </span>
+                                        <i class="icon-arrow_down"></i>
+                                        <span class="hover-shape1"></span>
+                                        <span class="hover-shape2"></span>
+                                        <span class="hover-shape3"></span>
+                                    </a>
+                                    <ul>
+                                        <li><a href="#"><img src="./assets/images/icons/pancake.png" alt="pancake"> PancakeSwap</a></li>
+                                      
+                                    </ul>
+                                </li> -->
+                                <li>
+                                    <button onclick="connect()" type="button" class="readon white-btn hover-shape"  data-bs-target="#exampleModal"><img src="./assets/images/icons/connect.png" alt="Icon"> 
+                                        <span id="wal" class="btn-text">Connect </span>
+                                        <span class="hover-shape1"></span>
+                                        <span class="hover-shape2"></span>
+                                        <span class="hover-shape3"></span>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Canvas Mobile Menu start -->
+            <nav class="right_menu_togle mobile-navbar-menu" id="mobile-navbar-menu">
+                <div class="close-btn">
+                    <a id="nav-close2" class="nav-close">
+                        <div class="line">
+                            <span class="line1"></span>
+                            <span class="line2"></span>
+                        </div>
+                    </a>
+                </div>
+                <div class="sidebar-logo mb-30">
+                    <a href="index.html"><img src="./assets/images/logo-dark1.png" alt=""></a>
+                </div>
+                <ul class="nav-menu">
+                    <li class="current-menu-item"><a href="index.html">Home</a></li>
+                 
+                    < <li><a href="https://btcbulldog.art/">Mint</a>
+                        <!-- <ul class="sub-menu">
+                            <li><a href="index.html">Staking 1</a></li>
+                            <li><a href="staking-2.html">Staking 2</a></li>
+                        </ul> -->
+                    </li>
+                    
+                    
+                </ul>
+            </nav>
+            <!-- Canvas Menu end -->
+        </header>
+        <!--Header End-->
+
+        <!-- Breadcrumbs Section Start -->
+        <div class="gamfi-breadcrumbs-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <div class="breadcrumbs-area sec-heading">
+                            <div class="sub-inner mb-15">
+                                <a class="breadcrumbs-link" href="index.html">Dashboard</a>
+                                <span class="sub-title">BTCBULLDOG</span>
+                                <img class="heading-left-image" src="./assets/images/icons/steps.png" alt="Steps-Image" />
+                            </div>
+                            <h2 class="title mb-0">BTCBULLDOG</h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 breadcrumbs-form md-mt-30">
+                        <div class="btn-area">
+                            <a class="readon black-shape" href="">
+                                <span class="btn-text">NFT Dashboard</span>
+                                <span class="hover-shape1"></span>
+                                <span class="hover-shape2"></span>
+                                <span class="hover-shape3"></span>
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <!-- <div class="col-lg-7 breadcrumbs-form md-mt-30">
+                        <div class="btn-area">
+                            <div class="containerr">
+                                <div class="labelr">
+                                   
+                                </div>
+                                <div class="copy-textr">
+                                    <input type="text" class="textr" value="david@stylus.co.za" />
+                                    <button><i class="fa fa-clone"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+
+
+
+                </div>
+            </div>
+        </div>
+        <!-- Breadcrumbs  Section End -->
+
+        <!-- Participat Detaisl Content Start -->
+        <div class="participat-information project-details-conent gamfi-about-secion pb-80 md-pb-50">
+            <div class="container">
+                <div class="row pt-70">
+                    <div class="col-lg-6 pr-25 md-pr-15">
+                        <div class="project-item">
+                            <div class="project-info border-bottom-2">
+                                <!-- <h4 class="mb-15">BTCBULLDOG NFT</h4> -->
+                                <h3 class="mb-15">BitDog-NFT <span class="buse"></span></h3>
+                                <span>Stats</span>
+                            </div>
+                            <ul class="date-listing mb-35">
+                                <li class="StakeTablinks" onclick="openTab(event, 'sevenDays')" id="defaultOpen">
+                                    <!-- <button>N</button> -->
+                                </li>
+                              
+                            </ul>
+                            <div class="project-content">
+                                <div id="sevenDays" class="StakeTabcontent">
+                                    <div class="project-media mb-40">
+                                        <ul class="project-listing">
+                                            <!-- <li>Mint Percentage :  <strong > <strong id="mintper" >0</strong>   </strong> <span>Stats</span></li> -->
+                                            <li style="font-weight: bold; font-size: 25px; color: #bc8c3a;"  >Reflect Percent  <strong   ></strong> <a href="#"><span id="reflectper" class="big-text">25</span></a></li>
+                                            <li style="font-weight: bold; font-size: 25px; color: #bc8c3a;" > Total Minted  <strong  ></strong><span id="totalmin" class="big-text"> 303</span></li>
+                                            <li> Max Supply : <strong id="maxsup" > 11569</strong> <strong></strong></li>
+                                            <!-- <li>Minimum Deposit  : <strong  >10 </strong> <strong></strong></li> -->
+                                        </ul>
+                                    </div>
+                                </div>
+
+                               
+
+
+                                
+                               
+                            </div>
+                            <div class="project-form-list">
+                                <h5   class="mb-18"> Unclaimed Rewards :  <span id="rewardperwal" > 0 </span>  ETH <span></span> </h5>
+                                <div class="balance-form-area mb-27">
+                              
+                                  
+                                    <span class="max"></span>
+                                    <div style="margin-top: -3%;" class="white-shape-small approve">
+                                        <input onclick="claimRewrd()" type="submit" value="Claim Reward">
+                                        <span class="hover-shape1"></span>
+                                        <span class="hover-shape2"></span>
+                                        <span class="hover-shape3"></span>      
+                                    </div>
+
+                                </div> 
+                                <!-- <h5   class="mb-18"> My Depsited :  <span id="balancestake" class="max"> 0 </span>  <span></span> </h5>
+                                <div class="balance-form-area">
+                                    <input type="text" value="5%" placeholder="0.00">
+                                    <span class="max"></span>
+                                    <div class="white-shape-small">
+                                        <input onclick="dailyrewrd()" type="submit" value="Withdraw">
+                                        <span class="hover-shape1"></span>
+                                        <span class="hover-shape2"></span>
+                                        <span class="hover-shape3"></span>      
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 pl-25 md-pl-15">
+                        <div class="project-item project-value-inner d-flex justify-content-between align-items-center mb-30">
+                            <div class="project-value">
+                                <h3  class="mb-15">  <span id="reflectionbal" >0</span> ETH  </h3>
+                                <span>Distributor Balance </span>
+                            </div>
+                            <div class="project-value-image">
+                                <img class="heading-right-image" src="./assets/images/project/rank.png" alt="rank"/>
+                            </div>
+
+                            
+                        </div>
+
+
+
+                       
+
+
+
+
+
+                        <div class="project-item project-value-inner d-flex justify-content-between align-items-center mb-30">
+                            <div class="project-value">
+                                <h3  class="mb-15">  <span id="totalrew" >0</span>  ETH </h3>
+                                <span>Total Rewards Distributed</span>
+                            </div>
+                            <div class="project-value-image">
+                                <img class="heading-right-image" src="./assets/images/project/rank.png" alt="rank"/>
+                            </div>
+
+                            
+                        </div>
+
+
+                        <div class="project-item project-value-inner d-flex justify-content-between align-items-center mb-30">
+                            <div class="project-value">
+                                <h3 id="balance1" class="mb-15">0 </h3>
+                                <span>NFTs Owned</span>
+                            </div>
+                            <div class="project-value-image">
+                                <img class="heading-right-image" src="./assets/images/project/rank2.png" alt="rank"/>
+                            </div>
+                        </div>
+                        <!-- <div class="project-item project-value-inner d-flex justify-content-between align-items-center">
+                            <div class="project-value">
+                                <h3 id="totalDepositer" class="mb-15">0</h3>
+                                <span>Reflect Percent</span>
+                            </div>
+                            <div class="project-value-image">
+                                <img class="heading-right-image" src="./assets/images/project/rank3.png" alt="rank"/>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- <div style="margin-top: 10%; margin-bottom: 15%;" class="gamfi-about-secion pb-80 md-pb-45">
+            <div class="container">
+                <div class="banner-slider-inner">
+                    <div class="sc-carousel owl-carousel" data-loop="true" data-items="1" data-margin="70" 
+                        data-autoplay="true" data-hoverpause="true" data-autoplay-timeout="5000" data-smart-speed="1500"
+                        data-dots="true" data-nav="false" data-nav-speed="true" data-center-mode="false"
+                        data-mobile-device="1" data-mobile-device-nav="false" data-mobile-device-dots="true"
+                        data-ipad-device="1" data-ipad-device-nav="false" data-ipad-device-dots="true"
+                        data-ipad-device2="1" data-ipad-device-nav2="false" data-ipad-device-dots2="false"
+                        data-md-device="1" data-md-device-nav="false" data-md-device-dots="true">
+                      
+                    </div>
+                </div>
+                <div style="margin-top: 2%;" class="pt-130 md-pt-80 heading-area align-items-center d-flex justify-content-between mb-30">
+                    <div class="sec-heading">
+                        <div class="sub-inner mb-15">
+                            <span class="sub-title">Website Flow</span>
+                            <img class="heading-left-image" src="./assets/images/icons/steps.png" alt="Steps-Image" />
+                        </div>
+                        <h2 class="title">How to Work</h2>
+                    </div>
+                    <div class="gamfi-btn-area">
+                        
+                    </div>
+                </div>
+                <div style="margin-bottom: 12%;" class="participate-area row">
+                    <div class="col-lg-4">
+                        <div class="participate-item d-flex wow fadeInUp" data-wow-delay="100ms" data-wow-duration="1500ms">
+                            <div class="number-image">
+                                <img src="./assets/images/icons/participate-image.png" alt="Participate-Image" />
+                            </div>
+                            <div class="participate-info">
+                                <h4 class="mb-10">Profit is 50%
+                                </h4>
+                                <p class="description">
+                                    Meaning when someone deposit 100$ then he going to get 150$ in return 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="participate-item d-flex wow fadeInUp mr-30" data-wow-delay="200ms" data-wow-duration="2000ms">
+                            <div class="number-image">
+                                <img src="./assets/images/icons/participate-image2.png" alt="Participate-Image" />
+                            </div>
+                            <div class="participate-info">
+                                <h4 class="mb-10"> 15% Instantly</h4>
+                                <p class="description">
+                                    Deposit  100$ get instantly back to the same wallet 15% 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="participate-item d-flex wow fadeInUp mr-20" data-wow-delay="300ms" data-wow-duration="2500ms">
+                            <div class="number-image">
+                                <img src="./assets/images/icons/participate-image3.png" alt="Participate-Image" />
+                            </div>
+                            <div class="participate-info">
+                                <h4 class="mb-10"> Daily Profit</h4>
+                                <p class="description">
+                                    So everyday I will be getting 5% base on what is left in my balance
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+
+
+
+        <!-- Participat Detaisl Content End -->
+
+        <!-- Footer Section Start -->
+        <div class="gamfi-footer-section"> 
+            <!-- <div class="container">
+                <div class="footer-cta-area text-center active-shape hover-shape-inner">
+                    <h2 class="title mb-15">
+                        Apply for project<br />
+                        incubation
+                    </h2>
+                    <div class="dsc mb-40">
+                        If you want to lanuch an IGO/IDO, It will be your perfect choice
+                    </div>
+                    <a class="banner-btn wow fadeInUp black-shape" data-wow-delay="300ms" data-wow-duration="2500ms" href="igo-apply.html">
+                        <span class="btn-text">Apply For IGO</span>
+                        <span class="hover-shape1"></span>
+                        <span class="hover-shape2"></span>
+                        <span class="hover-shape3"></span>
+                    </a>
+                    <span class="border-shadow shadow-1"></span>
+                    <span class="border-shadow shadow-2"></span>
+                    <span class="border-shadow shadow-3"></span>
+                    <span class="border-shadow shadow-4"></span>
+                    <span class="hover-shape-bg hover_shape1"></span>
+                    <span class="hover-shape-bg hover_shape2"></span>
+                    <span class="hover-shape-bg hover_shape3"></span>
+                </div>
+            </div> -->
+            <div class="footer-area">
+                <div class="container">
+                    <div class="sec-heading text-center">
+                        <div class="sub-inner mb-52">
+                            <img class="heading-right-image" src="./assets/images/icons/steps2.png" alt="Steps-Image"/>
+                            <span class="sub-title white-color">Find us on Social</span>
+                            <img class="heading-left-image" src="./assets/images/icons/steps.png" alt="Steps-Image"/>
+                        </div>
+                    </div>
+                    <div class="footer-listing text-center mb-100 md-mb-70">
+                        <ul class="footer-icon-list">
+                            <li><a href="https://twitter.com/btc_bulldog"><i class="icon-twitter"></i></a></li>
+                            <li><a href="https://t.me/btcbulldogofficial"><i class="icon-telegram"></i></a></li>
+                           
+                            <li><a href="https://www.instagram.com/BTCbulldog.official/"><i class="icon-instagram"></i></a></li>
+                            <li><a href="https://www.facebook.com/BTCBullDog"><i class="icon-facebook"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-logo text-center mb-45">
+                        <img src="./assets/images/logo1.png" alt="Footer-logo" />
+                    </div>
+                    <div class="footer-mainmenu text-center mb-20">
+                        <!-- <ul>
+                            <li><a href="#">Features</a></li>
+                            <li><a href="#">How it works</a></li>
+                            <li><a href="#">Token info</a></li>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Social media</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul> -->
+                    </div>
+                    <div class="copyright-area text-center mb-0">
+                        <div class="dsc mb-37">Copyright © 2022. All Rights Reserved by <a target="_blank" class="gafi" href="#">BTCBULLDOG</a></div>
+                    </div>
+                    <div class="scrollup text-center">
+                        <a href="#"><i class="icon-arrow_up"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- Footer Section End -->
+
+        <!-- Modal Section Start-->
+        <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                         <h4 class="modals-title  mb-0" id="exampleModalLabel">Connect Wallet</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="icon-x"></i></button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="mb-20">Please select a wallet to connect to this marketplace</p>
+                        <div class="connect-section">
+                            <!-- <ul class="heading-list">
+                                <li><a href="#"><span><img src="./assets/images/icons/meta-mask.png" alt="Meta-mask-Image"></span>MetaMask</a></li>
+                                <li><a href="#"><span><img src="./assets/images/icons/coinbase.png" alt="Coinbase-Image"></span>Coinbase</a></li>
+                                <li><a href="#"><span><img src="./assets/images/icons/trust.png" alt="Trust-Image"></span>Trust Wallet</a></li>
+                                <li><a href="#"><span><img src="./assets/images/icons/wallet.png" alt="Wallet-Image"></span>WalletConnect</a></li>
+                            </ul> -->
+                        </div>
+                        <p>By connecting your wallet, you agree to our <a href="#"><span class="modal-title">Terms of Service </span></a>and our <a href="#"><span class="modal-title"> Privacy Policy</span></a>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Section End-->
+        
+        <!-- modernizr js -->
+        <script src="./assets/js/modernizr-2.8.3.min.js"></script>
+        <!-- jquery latest version -->
+        <script src="./assets/js/jquery.min.js"></script>
+        <!-- Bootstrap v4.4.1 js -->
+        <script src="./assets/js/bootstrap.min.js"></script>
+        <!-- popup.min js -->
+        <script src="./assets/js/jquery.magnific-popup.min.js"></script>
+        <!-- imagesloaded.pkgd.min js -->
+        <script src="./assets/js/imagesloaded.pkgd.min.js"></script>
+        <!-- wow js -->
+        <script src="./assets/js/wow.min.js"></script>
+        <script src="./assets/js/jquery.counterup.min.js"></script>
+        <!-- counter top js -->
+        <script src="./assets/js/waypoints.min.js"></script>
+        <!-- owl.carousel js -->
+        <script src="./assets/js/owl.carousel.min.js"></script>
+        <!-- plugins js -->
+        <script src="./assets/js/plugins.js"></script>
+        <!-- main js -->
+        <script src="./assets/js/main.js"></script>
+        <!-- Tab -->
+        <script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+window.addEventListener('load', async () => {
+    // console.log("hi");
+ 
+  if (window.ethereum) {
+      window.web3 = new Web3(ethereum);
+      try {
+        
+          await ethereum.enable();
+          
+        
+    var accounts = await window.web3.eth.getAccounts();
+    console.log("account is " ,accounts);
+    document.getElementById("wal").innerHTML=  accounts[0].slice(0,4) + "..." + accounts[0].slice(-2) ;
+   
+  
+  
+         
+    var abi =[{"inputs":[{"internalType":"string","name":"name","type":"string"},{"internalType":"string","name":"symbol","type":"string"},{"internalType":"uint256","name":"mintPrice","type":"uint256"},{"internalType":"address","name":"admin","type":"address"},{"internalType":"uint256","name":"max","type":"uint256"}],"stateMutability":"nonpayable","type":"constructor"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"owner","type":"address"},{"indexed":true,"internalType":"address","name":"approved","type":"address"},{"indexed":true,"internalType":"uint256","name":"tokenId","type":"uint256"}],"name":"Approval","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"owner","type":"address"},{"indexed":true,"internalType":"address","name":"operator","type":"address"},{"indexed":false,"internalType":"bool","name":"approved","type":"bool"}],"name":"ApprovalForAll","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"bytes32","name":"role","type":"bytes32"},{"indexed":true,"internalType":"bytes32","name":"previousAdminRole","type":"bytes32"},{"indexed":true,"internalType":"bytes32","name":"newAdminRole","type":"bytes32"}],"name":"RoleAdminChanged","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"bytes32","name":"role","type":"bytes32"},{"indexed":true,"internalType":"address","name":"account","type":"address"},{"indexed":true,"internalType":"address","name":"sender","type":"address"}],"name":"RoleGranted","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"bytes32","name":"role","type":"bytes32"},{"indexed":true,"internalType":"address","name":"account","type":"address"},{"indexed":true,"internalType":"address","name":"sender","type":"address"}],"name":"RoleRevoked","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"from","type":"address"},{"indexed":true,"internalType":"address","name":"to","type":"address"},{"indexed":true,"internalType":"uint256","name":"tokenId","type":"uint256"}],"name":"Transfer","type":"event"},{"inputs":[],"name":"DEFAULT_ADMIN_ROLE","outputs":[{"internalType":"bytes32","name":"","type":"bytes32"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"tokenId","type":"uint256"}],"name":"NftCreator","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"string","name":"URI","type":"string"}],"name":"SetcontractURI","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"_contractMeta","outputs":[{"internalType":"string","name":"","type":"string"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"_distributorFee","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"_feeReciever","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"_tokenIdTracker","outputs":[{"internalType":"uint256","name":"_value","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"TokenToAdd","type":"address"},{"internalType":"uint256","name":"percent","type":"uint256"}],"name":"addTokenToBuy","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"wallet","type":"address"},{"internalType":"uint256","name":"percent","type":"uint256"}],"name":"addWalletToBuy","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"to","type":"address"},{"internalType":"uint256","name":"tokenId","type":"uint256"}],"name":"approve","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"artistFeeReciever","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"artistPercent","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"owner","type":"address"}],"name":"balanceOf","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"canMint","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"claimRewards","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"claimRewardsInToken","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"claimTokens","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"contractURI","outputs":[{"internalType":"string","name":"","type":"string"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"","type":"uint256"}],"name":"creator","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"currentRate","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"deposit","outputs":[],"stateMutability":"payable","type":"function"},{"inputs":[],"name":"devFeeReciever","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address[]","name":"Adds","type":"address[]"}],"name":"excludeFromrewardMultiple","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"","type":"address"}],"name":"excludedFromRewards","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"tokenId","type":"uint256"}],"name":"getApproved","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"getMaxSupply","outputs":[{"internalType":"uint256","name":"max","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"getMintPrice","outputs":[{"internalType":"uint256","name":"mintPrice","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"getMinted","outputs":[{"internalType":"uint256","name":"minted","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"tokenId","type":"uint256"}],"name":"getReflectionBalance","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"getReflectionBalances","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"bytes32","name":"role","type":"bytes32"}],"name":"getRoleAdmin","outputs":[{"internalType":"bytes32","name":"","type":"bytes32"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"bytes32","name":"role","type":"bytes32"},{"internalType":"uint256","name":"index","type":"uint256"}],"name":"getRoleMember","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"bytes32","name":"role","type":"bytes32"}],"name":"getRoleMemberCount","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"getServiceFee","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"getStoragePrice","outputs":[{"internalType":"uint256","name":"storagePrice","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"bytes32","name":"role","type":"bytes32"},{"internalType":"address","name":"account","type":"address"}],"name":"grantRole","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"bytes32","name":"role","type":"bytes32"},{"internalType":"address","name":"account","type":"address"}],"name":"hasRole","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"owner","type":"address"},{"internalType":"address","name":"operator","type":"address"}],"name":"isApprovedForAll","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"isAutostaking","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"marketingReciever","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"maxSupply","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"mint","outputs":[],"stateMutability":"payable","type":"function"},{"inputs":[{"internalType":"uint256","name":"quantity","type":"uint256"}],"name":"mintMany","outputs":[],"stateMutability":"payable","type":"function"},{"inputs":[{"internalType":"address[]","name":"recipients","type":"address[]"}],"name":"mintMultiples","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"mintPercentage","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"name","outputs":[{"internalType":"string","name":"","type":"string"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"tokenId","type":"uint256"}],"name":"ownerOf","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"contract IBEP20","name":"token","type":"address"}],"name":"recoverStuckToken","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"reflectPercent","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"reflectionBalance","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"TokenToRemove","type":"address"}],"name":"removeTokenToBuy","outputs":[{"internalType":"bool","name":"success","type":"bool"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"ToRemove","type":"address"}],"name":"removeWalletToBuy","outputs":[{"internalType":"bool","name":"success","type":"bool"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"bytes32","name":"role","type":"bytes32"},{"internalType":"address","name":"account","type":"address"}],"name":"renounceRole","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"bytes32","name":"role","type":"bytes32"},{"internalType":"address","name":"account","type":"address"}],"name":"revokeRole","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"router","outputs":[{"internalType":"contract IDEXRouter","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"from","type":"address"},{"internalType":"address","name":"to","type":"address"},{"internalType":"uint256","name":"tokenId","type":"uint256"}],"name":"safeTransferFrom","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"from","type":"address"},{"internalType":"address","name":"to","type":"address"},{"internalType":"uint256","name":"tokenId","type":"uint256"},{"internalType":"bytes","name":"_data","type":"bytes"}],"name":"safeTransferFrom","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"newAdmin","type":"address"}],"name":"setAdditionalAdmin","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"operator","type":"address"},{"internalType":"bool","name":"approved","type":"bool"}],"name":"setApprovalForAll","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"receiver","type":"address"}],"name":"setArtistFeeReciever","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"string","name":"baseURI","type":"string"}],"name":"setBaseURI","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"reciever","type":"address"}],"name":"setFeeReciever","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"receiver","type":"address"}],"name":"setMarketingFeeReciever","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"bool","name":"Allowed","type":"bool"}],"name":"setMintingEnabled","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"uint256","name":"percentage","type":"uint256"}],"name":"setReflectPercent","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"uint256","name":"tokenId","type":"uint256"},{"internalType":"string","name":"_tokenURI","type":"string"}],"name":"setTokenURI","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"bytes4","name":"interfaceId","type":"bytes4"}],"name":"supportsInterface","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"symbol","outputs":[{"internalType":"string","name":"","type":"string"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"index","type":"uint256"}],"name":"tokenByIndex","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"owner","type":"address"},{"internalType":"uint256","name":"index","type":"uint256"}],"name":"tokenOfOwnerByIndex","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"tokenId","type":"uint256"}],"name":"tokenURI","outputs":[{"internalType":"string","name":"","type":"string"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"","type":"uint256"}],"name":"tokensToBuy","outputs":[{"internalType":"address","name":"buyableToken","type":"address"},{"internalType":"uint256","name":"percentage","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"totalCollected","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"totalDividend","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"totalReflectionVolume","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"totalSupply","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"totalrewards","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"from","type":"address"},{"internalType":"address","name":"to","type":"address"},{"internalType":"uint256","name":"tokenId","type":"uint256"}],"name":"transferFrom","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"uint256","name":"","type":"uint256"}],"name":"walletsToSend","outputs":[{"internalType":"address","name":"walletAddress","type":"address"},{"internalType":"uint256","name":"percentage","type":"uint256"}],"stateMutability":"view","type":"function"},{"stateMutability":"payable","type":"receive"}]
+        var contract_address= '0x337156242FA1FC88C4C5c39Ff4d875EAAD9b10Df'; 
+
+
+
+
+
+    
+
+
+
+      var instance = new web3.eth.Contract(
+      abi,
+      contract_address
+    );
+
+    // ============ left side =========
+    var balance = await instance.methods.balanceOf(accounts[0]).call();
+    console.log("bal is nft is" , balance)
+    //   document.getElementById("balance").innerHTML= balance ;
+      document.getElementById("balance1").innerHTML= balance ;
+      
+     
+
+    //   var MintPercent = await instance.methods.mintPercentage().call();
+    //   document.getElementById("mintper").innerHTML= MintPercent ;
+
+      var reflectPercent = await instance.methods.reflectPercent().call();
+      document.getElementById("reflectper").innerHTML= reflectPercent ;
+
+      var totalMinted = await instance.methods.getMinted().call();
+      document.getElementById("totalmin").innerHTML= totalMinted ;
+      console.log(totalMinted);
+
+      
+
+    //   =========== Right Side ================
+
+    var reflectBalance =  web3.eth.getBalance(contract_address).then((a)=>{
+        document.getElementById("reflectionbal").innerHTML= a / 1000000000000000000;
+        
+
+    });
+    
+   
+
+
+    var reflectBalance = await instance.methods.getReflectionBalance(accounts[0]).call();
+    var  pernft = reflectBalance / 1000000000000000000
+
+    document.getElementById("rewardperwal").innerHTML= pernft *  balance ;
+
+
+    var totalReward = await instance.methods.totalrewards().call();
+    var  totalReflectionVolum = await instance.methods.totalReflectionVolume().call();
+    var  reflectionBalanc = await instance.methods.reflectionBalance().call();
+    var rewardcal = totalReflectionVolum - reflectionBalanc
+    
+    
+    document.getElementById("totalrew").innerHTML= rewardcal / 1000000000000000000  ;
+
+    console.log("ref is ::" , reflectBalance  / 1000000000000000000);
+
+
+  console.log("Sender :  " + accounts[0]);
+          console.log('1111');
+          //call function to connect contract
+          //  ConnectToContract();
+
+      } catch (error) {
+          // User denied account access...
+      }
+  }
+  // Legacy dapp browsers...
+  else if (window.web3) {
+      window.web3 = new Web3(web3.currentProvider);
+      // Acccounts always exposed
+      // web3.eth.sendTransaction({/* ... */});
+  }
+  // Non-dapp browsers...
+  else {
+    alert("please install metamask")
+      console.log('Non-Ethereum browser detected. You should consider trying MetaMask!');
+  }
+})
+
+
+
+
+
+
+ async function claimRewrd(){
+
+    var accounts = await window.web3.eth.getAccounts();
+    console.log("account is " ,accounts);
+   
+        
+        
+          
+var abi =[{"inputs":[{"internalType":"string","name":"name","type":"string"},{"internalType":"string","name":"symbol","type":"string"},{"internalType":"uint256","name":"mintPrice","type":"uint256"},{"internalType":"address","name":"admin","type":"address"},{"internalType":"uint256","name":"max","type":"uint256"}],"stateMutability":"nonpayable","type":"constructor"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"owner","type":"address"},{"indexed":true,"internalType":"address","name":"approved","type":"address"},{"indexed":true,"internalType":"uint256","name":"tokenId","type":"uint256"}],"name":"Approval","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"owner","type":"address"},{"indexed":true,"internalType":"address","name":"operator","type":"address"},{"indexed":false,"internalType":"bool","name":"approved","type":"bool"}],"name":"ApprovalForAll","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"bytes32","name":"role","type":"bytes32"},{"indexed":true,"internalType":"bytes32","name":"previousAdminRole","type":"bytes32"},{"indexed":true,"internalType":"bytes32","name":"newAdminRole","type":"bytes32"}],"name":"RoleAdminChanged","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"bytes32","name":"role","type":"bytes32"},{"indexed":true,"internalType":"address","name":"account","type":"address"},{"indexed":true,"internalType":"address","name":"sender","type":"address"}],"name":"RoleGranted","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"bytes32","name":"role","type":"bytes32"},{"indexed":true,"internalType":"address","name":"account","type":"address"},{"indexed":true,"internalType":"address","name":"sender","type":"address"}],"name":"RoleRevoked","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"from","type":"address"},{"indexed":true,"internalType":"address","name":"to","type":"address"},{"indexed":true,"internalType":"uint256","name":"tokenId","type":"uint256"}],"name":"Transfer","type":"event"},{"inputs":[],"name":"DEFAULT_ADMIN_ROLE","outputs":[{"internalType":"bytes32","name":"","type":"bytes32"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"tokenId","type":"uint256"}],"name":"NftCreator","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"string","name":"URI","type":"string"}],"name":"SetcontractURI","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"_contractMeta","outputs":[{"internalType":"string","name":"","type":"string"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"_distributorFee","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"_feeReciever","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"_tokenIdTracker","outputs":[{"internalType":"uint256","name":"_value","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"TokenToAdd","type":"address"},{"internalType":"uint256","name":"percent","type":"uint256"}],"name":"addTokenToBuy","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"wallet","type":"address"},{"internalType":"uint256","name":"percent","type":"uint256"}],"name":"addWalletToBuy","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"to","type":"address"},{"internalType":"uint256","name":"tokenId","type":"uint256"}],"name":"approve","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"artistFeeReciever","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"artistPercent","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"owner","type":"address"}],"name":"balanceOf","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"canMint","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"claimRewards","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"claimRewardsInToken","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"claimTokens","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"contractURI","outputs":[{"internalType":"string","name":"","type":"string"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"","type":"uint256"}],"name":"creator","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"currentRate","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"deposit","outputs":[],"stateMutability":"payable","type":"function"},{"inputs":[],"name":"devFeeReciever","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address[]","name":"Adds","type":"address[]"}],"name":"excludeFromrewardMultiple","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"","type":"address"}],"name":"excludedFromRewards","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"tokenId","type":"uint256"}],"name":"getApproved","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"getMaxSupply","outputs":[{"internalType":"uint256","name":"max","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"getMintPrice","outputs":[{"internalType":"uint256","name":"mintPrice","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"getMinted","outputs":[{"internalType":"uint256","name":"minted","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"tokenId","type":"uint256"}],"name":"getReflectionBalance","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"getReflectionBalances","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"bytes32","name":"role","type":"bytes32"}],"name":"getRoleAdmin","outputs":[{"internalType":"bytes32","name":"","type":"bytes32"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"bytes32","name":"role","type":"bytes32"},{"internalType":"uint256","name":"index","type":"uint256"}],"name":"getRoleMember","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"bytes32","name":"role","type":"bytes32"}],"name":"getRoleMemberCount","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"getServiceFee","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"getStoragePrice","outputs":[{"internalType":"uint256","name":"storagePrice","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"bytes32","name":"role","type":"bytes32"},{"internalType":"address","name":"account","type":"address"}],"name":"grantRole","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"bytes32","name":"role","type":"bytes32"},{"internalType":"address","name":"account","type":"address"}],"name":"hasRole","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"owner","type":"address"},{"internalType":"address","name":"operator","type":"address"}],"name":"isApprovedForAll","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"isAutostaking","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"marketingReciever","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"maxSupply","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"mint","outputs":[],"stateMutability":"payable","type":"function"},{"inputs":[{"internalType":"uint256","name":"quantity","type":"uint256"}],"name":"mintMany","outputs":[],"stateMutability":"payable","type":"function"},{"inputs":[{"internalType":"address[]","name":"recipients","type":"address[]"}],"name":"mintMultiples","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"mintPercentage","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"name","outputs":[{"internalType":"string","name":"","type":"string"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"tokenId","type":"uint256"}],"name":"ownerOf","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"contract IBEP20","name":"token","type":"address"}],"name":"recoverStuckToken","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"reflectPercent","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"reflectionBalance","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"TokenToRemove","type":"address"}],"name":"removeTokenToBuy","outputs":[{"internalType":"bool","name":"success","type":"bool"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"ToRemove","type":"address"}],"name":"removeWalletToBuy","outputs":[{"internalType":"bool","name":"success","type":"bool"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"bytes32","name":"role","type":"bytes32"},{"internalType":"address","name":"account","type":"address"}],"name":"renounceRole","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"bytes32","name":"role","type":"bytes32"},{"internalType":"address","name":"account","type":"address"}],"name":"revokeRole","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"router","outputs":[{"internalType":"contract IDEXRouter","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"from","type":"address"},{"internalType":"address","name":"to","type":"address"},{"internalType":"uint256","name":"tokenId","type":"uint256"}],"name":"safeTransferFrom","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"from","type":"address"},{"internalType":"address","name":"to","type":"address"},{"internalType":"uint256","name":"tokenId","type":"uint256"},{"internalType":"bytes","name":"_data","type":"bytes"}],"name":"safeTransferFrom","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"newAdmin","type":"address"}],"name":"setAdditionalAdmin","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"operator","type":"address"},{"internalType":"bool","name":"approved","type":"bool"}],"name":"setApprovalForAll","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"receiver","type":"address"}],"name":"setArtistFeeReciever","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"string","name":"baseURI","type":"string"}],"name":"setBaseURI","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"reciever","type":"address"}],"name":"setFeeReciever","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"receiver","type":"address"}],"name":"setMarketingFeeReciever","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"bool","name":"Allowed","type":"bool"}],"name":"setMintingEnabled","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"uint256","name":"percentage","type":"uint256"}],"name":"setReflectPercent","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"uint256","name":"tokenId","type":"uint256"},{"internalType":"string","name":"_tokenURI","type":"string"}],"name":"setTokenURI","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"bytes4","name":"interfaceId","type":"bytes4"}],"name":"supportsInterface","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"symbol","outputs":[{"internalType":"string","name":"","type":"string"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"index","type":"uint256"}],"name":"tokenByIndex","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"owner","type":"address"},{"internalType":"uint256","name":"index","type":"uint256"}],"name":"tokenOfOwnerByIndex","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"tokenId","type":"uint256"}],"name":"tokenURI","outputs":[{"internalType":"string","name":"","type":"string"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"","type":"uint256"}],"name":"tokensToBuy","outputs":[{"internalType":"address","name":"buyableToken","type":"address"},{"internalType":"uint256","name":"percentage","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"totalCollected","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"totalDividend","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"totalReflectionVolume","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"totalSupply","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"totalrewards","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"from","type":"address"},{"internalType":"address","name":"to","type":"address"},{"internalType":"uint256","name":"tokenId","type":"uint256"}],"name":"transferFrom","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"uint256","name":"","type":"uint256"}],"name":"walletsToSend","outputs":[{"internalType":"address","name":"walletAddress","type":"address"},{"internalType":"uint256","name":"percentage","type":"uint256"}],"stateMutability":"view","type":"function"},{"stateMutability":"payable","type":"receive"}]
+        var contract_address= '0x337156242FA1FC88C4C5c39Ff4d875EAAD9b10Df'; 
+
+
+    
+
+    var instance = new web3.eth.Contract(
+      abi,
+      contract_address
+    );
+
+   
+
+  await instance.methods.claimRewardsInToken()
+      .send({from : accounts[0]});
+
+    
+ 
+
+    
+
+
+ }
+
+
+
+
+
+
+
+
+            function openTab(evt, cityName) {
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByClassName("StakeTabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("StakeTablinks");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+                document.getElementById(cityName).style.display = "block";
+                evt.currentTarget.className += " active";
+            }
+
+            // Get the element with id="defaultOpen" and click on it
+            document.getElementById("defaultOpen").click();
+
+
+   
+
+
+
+
+
+
+let copyText = document.querySelector(".copy-textr");
+copyText.querySelector("button").addEventListener("click", function () {
+	let input = copyText.querySelector("input.textr");
+	input.select();
+	document.execCommand("copy");
+	copyText.classList.add("active");
+	window.getSelection().removeAllRanges();
+	setTimeout(function () {
+		copyText.classList.remove("active");
+	}, 2500);
+});
+
+
+
+
+
+
+        </script>
+    </body>
+
+<!-- Mirrored from uigaint.com/demo/html/Gamfi/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 27 Feb 2022 07:59:21 GMT -->
+
+<!-- Mirrored from www.lapad.co/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 15 Oct 2022 05:09:25 GMT -->
+</html>
